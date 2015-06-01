@@ -6,8 +6,7 @@ import org.apache.wicket.protocol.http.WebApplication;
 /**
  * Application object for your web application.
  * If you want to run this application without deploying, run the Start class.
- * 
- * @see nl.ovsoftware.Start#main(String[])
+ *
  */
 public class WicketApplication extends WebApplication
 {
@@ -27,6 +26,7 @@ public class WicketApplication extends WebApplication
 	public void init()
 	{
 		super.init();
+		mountPage("/home", HomePage.class);
 
 		// add your configuration here
 	}
