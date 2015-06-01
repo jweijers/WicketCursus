@@ -15,6 +15,11 @@
 		</div>
 		<div id="bd">
 			<span wicket:id="feedback">[Feedback Panel]</span>
+			<!--<span wicket:id="messages" class="mark">this text will be replaced</span>-->
+			<p wicket:id="messages">
+				<span wicket:id="sender" /> <span wicket:id="msg" /> <br/>
+			</p>
+
 			<p>Voeg een reactie toe:</p>
 			<form wicket:id="form">
 				<input type="text" wicket:id="name"/> <br/>
