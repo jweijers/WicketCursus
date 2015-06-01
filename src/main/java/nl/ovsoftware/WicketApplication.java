@@ -16,7 +16,7 @@ public class WicketApplication extends WebApplication
 	@Override
 	public Class<? extends WebPage> getHomePage()
 	{
-		return HomePage.class;
+		return TestPage.class;
 	}
 
 	/**
@@ -27,6 +27,7 @@ public class WicketApplication extends WebApplication
 	{
 		super.init();
 		mountPage("/home", HomePage.class);
+		mountPage("/test", TestPage.class);
 
 		// add your configuration here
 	}
